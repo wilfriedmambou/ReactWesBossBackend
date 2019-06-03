@@ -1,0 +1,12 @@
+# ${env:PRISMA_ENDPOINT}  ${env:PRISMA_SECRET}
+endpoint: https://eu1.prisma.sh/wilfriedmambou300-eef5af/sick-fits/dev
+datamodel: "datamodel.prisma"
+# sercret: omgplzdonttellanyone
+hooks:
+   post-deploy:
+     - graphql get-schema -p prisma
+
+
+
+
+# https://eu1.prisma.sh/wilfriedmambou300-eef5af/ sick-fits/dev
